@@ -64,7 +64,7 @@ export default function Skills() {
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 p-10 m-5">
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 lg:p-10 lg:m-5">
                 <CardContent>
                   <Icon className="w-10 h-10 mx-auto my-6 mb-2 text-gray-600" />
                   <h3 className="text-xl font-semibold my-3 ">{title}</h3>
