@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="mt-40">
+    <section id="projects" className="my-10">
       <h2 className="text-4xl font-bold text-white mb-4 border-b border-white py-5 mx-7">
         Featured Projects
       </h2>

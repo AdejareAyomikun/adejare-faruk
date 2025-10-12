@@ -1,9 +1,14 @@
+"use client";
+
+import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Projects from "./components/Projects";
 import { Contact } from "./components/Contact";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -73,13 +78,10 @@ export default function Home() {
           it all turning challenges into opportunities and ideas into impact
         </p>
       </section>
-
+      <Skills />
       <Projects />
       <Contact />
-        {/* Footer */}
-        <footer className="text-center text-sm text-white mt-16">
-          © {new Date().getFullYear()} Adejare Faruk • Portfolio
-        </footer>
+      <Footer />
     </div>
   );
 }

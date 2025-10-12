@@ -10,8 +10,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Home", icon: <Home size={18} />, href: "#home" },
-    { name: "About", icon: <User size={18} />, href: "#about" },
+    { name: "Home", icon: <Home size={18} />, href: "/" },
+    { name: "About", icon: <User size={18} />, href: "/about" },
     { name: "Projects", icon: <Briefcase size={18} />, href: "#projects" },
     { name: "Contact", icon: <Mail size={18} />, href: "#contact" },
   ];
