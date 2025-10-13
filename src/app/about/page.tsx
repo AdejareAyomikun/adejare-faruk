@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function About() {
   return (
-    <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/70">
+    <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/80">
       <Navbar />
       <section className="grid place-items-center w-full mt-5">
         <Image
