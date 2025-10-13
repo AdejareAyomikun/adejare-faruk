@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/70">
+    <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/80">
       <Navbar />
       <section className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 lg:mt-20">
         <div className="pt-10">
