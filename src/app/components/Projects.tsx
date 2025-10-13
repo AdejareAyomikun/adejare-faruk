@@ -39,7 +39,7 @@ export default function Projects() {
       <h2 className="text-4xl font-bold text-white mb-4 border-b border-white py-5 mx-7">
         Featured Projects
       </h2>
-      <div className="max-w-6xl mx-auto p-10 text-center">
+      <div className="max-w-6xl mx-auto lg:p-10 py-5 text-center">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.div
