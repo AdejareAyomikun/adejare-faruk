@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/70">
       <Navbar />
-      <section className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-20">
+      <section className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 lg:mt-20">
         <div className="pt-10">
           <p className="text-gray-400">Hi, my name is</p>
           <h1 className="text-4xl font-bold text-white mb-4">Adejare Faruk.</h1>
