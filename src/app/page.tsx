@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import { Contact } from "./components/Contact";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
+import Certificates from "./components/Certificates";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full max-w-5xl mt-50">
+      <section className="w-full max-w-5xl mt-20 lg:mt-40">
         <h1 className="text-4xl font-bold text-white mb-4 border-b border-white py-5">
           About Me
         </h1>
@@ -80,6 +81,7 @@ export default function Home() {
       </section>
       <Skills />
       <Projects />
+      <Certificates />
       <Contact />
       <Footer />
     </div>

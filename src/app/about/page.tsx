@@ -17,7 +17,7 @@ export default function About() {
           className="rounded-lg shadow-lg"
         />
         <h1 className="text-4xl text-white py-5">Adejare Faruk Ayomkun</h1>
-        <div className="mt-5 mx-10">
+        <div className="mt-5">
           <p className="text-gray-300">
             I am a developer passionate about crafting accessible, pixel-perfect
             user interfaces that blend thoughtful design with robust
