@@ -1,9 +1,11 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import { Github, Linkedin } from 'lucide-react';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Projects from "./components/Projects";
 import { Contact } from "./components/Contact";
@@ -12,11 +14,26 @@ import Footer from "./components/Footer";
 import Certificates from "./components/Certificates";
 
 export default function Home() {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+  const slideInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
   return (
     <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/80">
       <Navbar />
-      <section className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 lg:mt-20">
-        <div className="pt-10">
+      <motion.section
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 mt-20"
+      >
+        <div className="">
           <p className="text-gray-400">Hi, my name is</p>
           <h1 className="text-4xl font-bold text-white mb-4">Adejare Faruk.</h1>
           <h1 className="text-4xl font-bold text-white mb-4">
@@ -33,6 +50,17 @@ export default function Home() {
           >
             View Projects
           </Button>
+           <Button
+            variant="outline"
+            size="lg"
+            className="text-white border-white ml-3 bg-black/10"
+          >
+            Contact Me
+          </Button>
+          <div className="flex my-4">
+            <span className="text-white rounded-full border p-2"><Github /></span>
+            <span className="text-white rounded-full border ml-3 p-2"><Linkedin /></span>
+          </div>
         </div>
         <div>
           <AspectRatio ratio={16 / 9}>
@@ -45,10 +73,17 @@ export default function Home() {
             />
           </AspectRatio>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="w-full max-w-5xl mt-20 lg:mt-40">
-        <h1 className="text-4xl font-bold text-white mb-4 border-b border-white py-5">
+      <motion.section
+        variants={slideInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        className="w-full mt-20 lg:mt-40"
+      >
+        <h1 className="text-4xl font-bold text-white mb-4 border-b border-white">
           About Me
         </h1>
         <p className="text-gray-300">
@@ -78,11 +113,43 @@ export default function Home() {
           build, and refine my craft, driven by the same curiosity that started
           it all turning challenges into opportunities and ideas into impact
         </p>
-      </section>
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
+      </motion.section>
+      <motion.section
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Skills />
+      </motion.section>
+      <motion.section
+        variants={slideInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Projects />
+      </motion.section>
+      <motion.section
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Certificates />
+      </motion.section>
+      <motion.section
+        variants={slideInUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1, delay: 0.2 }}
+      >
+        <Contact />
+      </motion.section>
       <Footer />
     </div>
   );

@@ -3,7 +3,7 @@ import {
   CreditCardIcon,
   InfoIcon,
   MailIcon,
-  SearchIcon,
+  User,
   StarIcon,
 } from "lucide-react";
 import { Textarea } from "@/components/ui/textarea";
@@ -21,7 +21,16 @@ export function Contact() {
         Contact Me
       </h1>
       <div className="grid w-full max-w-3xl gap-6 mx-7 mt-10 text-center">
-        <h2 className="text-2xl font-semibold text-white">Send Me A Message</h2>
+        <h2 className="text-1xl font-semibold text-gray-300">
+          Have a project in mind or want to collaborate? Feel free to reach out
+          and I'll get back to you as soon as possible.
+        </h2>
+        <InputGroup>
+          <InputGroupInput type="email" placeholder="Enter your Name" />
+          <InputGroupAddon>
+            <User />
+          </InputGroupAddon>
+        </InputGroup>
         <InputGroup>
           <InputGroupInput type="email" placeholder="Enter your email" />
           <InputGroupAddon>
