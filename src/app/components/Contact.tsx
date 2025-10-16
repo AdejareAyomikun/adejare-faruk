@@ -1,3 +1,5 @@
+"use client";
+
 import {
   CheckIcon,
   CreditCardIcon,
@@ -23,7 +25,7 @@ export function Contact() {
       <div className="grid w-full max-w-3xl gap-6 mx-7 mt-10 text-center">
         <h2 className="text-1xl font-semibold text-gray-300">
           Have a project in mind or want to collaborate? Feel free to reach out
-          and I'll get back to you as soon as possible.
+          and I&apos;ll get back to you as soon as possible.
         </h2>
         <InputGroup>
           <InputGroupInput type="email" placeholder="Enter your Name" />
