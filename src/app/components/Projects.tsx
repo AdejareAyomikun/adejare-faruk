@@ -11,7 +11,8 @@ const projects = [
     title: "OrbitAI App",
     description:
       "A productivity web app built with React and Firebase that helps users manage daily tasks with real-time updates.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759950115/orbitAi_jwgce1.png",
+    image:
+      "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759950115/orbitAi_jwgce1.png",
     live: "https://orbyt-ai.vercel.app/",
     tech: ["React", "TailwindCSS", "Firebase"],
   },
@@ -19,7 +20,8 @@ const projects = [
     title: "OrbitAI Admin Dashboard",
     description:
       "An internal tool for Agidigbo FM to manage show schedules and announcements efficiently.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/c_pad,w_500,h_500,e_improve,e_sharpen/v1759950834/orbitAi-Admin_q8ks0x.png",
+    image:
+      "https://res.cloudinary.com/dehxkiyzb/image/upload/c_pad,w_500,h_500,e_improve,e_sharpen/v1759950834/orbitAi-Admin_q8ks0x.png",
     live: "https://orbyt-ai.vercel.app/admin",
     tech: ["Next.js", "TailwindCSS", "Node.js"],
   },
@@ -27,10 +29,20 @@ const projects = [
     title: "Portfolio Website",
     description:
       "My personal portfolio showcasing projects, skills, and experiences in software development.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759952180/portfolio_bruzix.png",
+    image:
+      "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759952180/portfolio_bruzix.png",
     live: "https://yourportfolio.vercel.app",
     tech: ["Next.js", "TailwindCSS", "Framer Motion"],
   },
+  {
+    title: "Portfolio Website",
+    description:
+      "My personal portfolio showcasing projects, skills, and experiences in software development.",
+    image:
+      "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759952180/portfolio_bruzix.png",
+    live: "https://yourportfolio.vercel.app",
+    tech: ["Next.js", "TailwindCSS", "Framer Motion"],
+  }
 ];
 
 export default function Projects() {
@@ -44,7 +56,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">

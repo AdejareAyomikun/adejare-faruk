@@ -28,7 +28,7 @@ export default function Navbar() {
         "rounded-full shadow-lg flex items-center justify-between"
       )}
     >
-      <div className="font-semibold text-lg text-white">Faruk.dev</div>
+      <div className="font-semibold text-lg text-white md:mr-5 lg:mr-20">Faruk.dev</div>
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 text-sm text-gray-200">
@@ -38,11 +38,11 @@ export default function Navbar() {
               href={link.href}
               className="flex items-center pl-5 gap-1 hover:text-white transition"
             >
-              {link.icon}
               {link.name}
             </a>
           </li>
         ))}
+        <li><a href="/My-Resume.pdf" className="rounded-lg border p-2 hover:bg-amber-50 hover:text-black" download>Resume</a></li>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -70,7 +70,6 @@ export default function Navbar() {
                   onClick={() => setOpen(false)}
                   className="flex items-center gap-2 hover:text-white transition"
                 >
-                  {link.icon}
                   {link.name}
                 </a>
               </li>
