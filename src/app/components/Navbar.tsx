@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", icon: <Home size={18} />, href: "/" },
-    { name: "About", icon: <User size={18} />, href: "/about" },
+    { name: "About", icon: <User size={18} />, href: "#about" },
     { name: "Projects", icon: <Briefcase size={18} />, href: "#projects" },
     { name: "Contact", icon: <Mail size={18} />, href: "#contact" },
   ];
@@ -74,6 +74,7 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li><a href="/My-Resume.pdf" className="rounded-lg border p-2 hover:bg-amber-50 hover:text-black" download>Resume</a></li>
           </ul>
         </motion.div>
       )}

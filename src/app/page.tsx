@@ -58,8 +58,8 @@ export default function Home() {
             Contact Me
           </Button>
           <div className="flex my-4">
-            <span className="text-white rounded-full border p-2"><Github /></span>
-            <span className="text-white rounded-full border ml-3 p-2"><Linkedin /></span>
+            <a href="https://github.com/AdejareAyomikun" className="text-white rounded-full border p-2"><Github /></a>
+            <a href="https://www.linkedin.com/in/adejare-faruk" className="text-white rounded-full border ml-3 p-2"><Linkedin /></a>
           </div>
         </div>
         <div>
@@ -81,7 +81,8 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="w-full mt-20 lg:mt-40"
+        className="w-full mt-20 lg:mt-50"
+        id="about"
       >
         <h1 className="text-4xl font-bold text-white mb-4 border-b border-white">
           About Me
