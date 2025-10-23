@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/button";
 
 export function Contact() {
   return (
-    <div id="contact" className="lg:w-250 place-items-center">
+    <div id="contact" className="lg:w-250 place-items-center mt-40">
       <h1 className="text-4xl font-bold text-white mb-4 border-b border-white py-5 w-full">
         Contact Me
       </h1>

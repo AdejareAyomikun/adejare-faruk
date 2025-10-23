@@ -12,6 +12,7 @@ import { Contact } from "./components/Contact";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Certificates from "./components/Certificates";
+import { div } from "framer-motion/client";
 
 export default function Home() {
   const fadeIn = {
@@ -23,7 +24,7 @@ export default function Home() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
   return (
-    <div className="font-sans items-center justify-items-center p-8 gap-16 sm:p-20 bg-black/80">
+    <div className="font-sans items-center justify-items-center p-8 gap-16 sm:p-20 bg-black/80" id="hero">
       <Navbar />
       <motion.section
         variants={fadeIn}
@@ -91,7 +92,7 @@ export default function Home() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="w-full mt-20 lg:mt-50"
+        className="w-full mt-50 lg:mt-60"
         id="about"
       >
         <h1 className="text-4xl font-bold text-white mb-4 border-b border-white">

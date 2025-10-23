@@ -15,7 +15,7 @@ import {
 
 export default function Skills() {
   return (
-    <section className="w-full mt-20">
+    <section id="skills" className="w-full mt-30 lg:mt-40">
       <h1 className="text-4xl font-bold text-white mb-4 border-b border-white py-5">
         My Skills
       </h1>

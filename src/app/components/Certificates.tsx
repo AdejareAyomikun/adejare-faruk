@@ -67,7 +67,7 @@ const projects = [
 
 export default function Certificates() {
   return (
-    <section id="projects" className="my-10">
+    <section id="certificates" className="mt-40">
       <h2 className="text-4xl font-bold text-white mb-4 border-b border-white py-5">
         Certificates
       </h2>
