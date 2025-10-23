@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Projects from "./components/Projects";
 import { Contact } from "./components/Contact";
@@ -19,11 +19,11 @@ export default function Home() {
     visible: { opacity: 1, y: 0 },
   };
   const slideInUp = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-};
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
   return (
-    <div className="font-sans items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 bg-black/80">
+    <div className="font-sans items-center justify-items-center p-8 gap-16 sm:p-20 bg-black/80">
       <Navbar />
       <motion.section
         variants={fadeIn}
@@ -50,7 +50,7 @@ export default function Home() {
           >
             View Projects
           </Button>
-           <Button
+          <Button
             variant="outline"
             size="lg"
             className="text-white border-white ml-3 bg-black/10"
@@ -58,8 +58,18 @@ export default function Home() {
             Contact Me
           </Button>
           <div className="flex my-4">
-            <a href="https://github.com/AdejareAyomikun" className="text-white rounded-full border p-2"><Github /></a>
-            <a href="https://www.linkedin.com/in/adejare-faruk" className="text-white rounded-full border ml-3 p-2"><Linkedin /></a>
+            <a
+              href="https://github.com/AdejareAyomikun"
+              className="text-white rounded-full border p-2"
+            >
+              <Github />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/faruk-ayomikun"
+              className="text-white rounded-full border ml-3 p-2"
+            >
+              <Linkedin />
+            </a>
           </div>
         </div>
         <div>
