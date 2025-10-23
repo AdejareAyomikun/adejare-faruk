@@ -24,7 +24,10 @@ export default function Home() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
   return (
-    <div className="font-sans items-center justify-items-center p-8 gap-16 sm:p-20 bg-black/80" id="hero">
+    <div
+      className="font-sans items-center justify-items-center p-8 gap-16 sm:p-20 bg-black/80"
+      id="hero"
+    >
       <Navbar />
       <motion.section
         variants={fadeIn}
@@ -135,15 +138,9 @@ export default function Home() {
       >
         <Skills />
       </motion.section>
-      <motion.section
-        variants={slideInUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 1, delay: 0.2 }}
-      >
-        <Projects />
-      </motion.section>
+
+      <Projects />
+
       <motion.section
         variants={fadeIn}
         initial="hidden"

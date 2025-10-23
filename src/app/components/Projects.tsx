@@ -56,7 +56,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 200 }}
             >
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">

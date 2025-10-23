@@ -2,7 +2,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
@@ -35,33 +34,6 @@ const certificates = [
       "ALX Learning",
     live: "https://yourportfolio.vercel.app",
     tech: ["Python", "PostgreSQL", "Django", "Framer Motion"],
-  },
-];
-
-const projects = [
-  {
-    title: "Professional Foundations",
-    description:
-      "A productivity web app built with React and Firebase that helps users manage daily tasks with real-time updates.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759950115/orbitAi_jwgce1.png",
-    live: "https://orbyt-ai.vercel.app/",
-    tech: ["React", "TailwindCSS", "Firebase"],
-  },
-  {
-    title: "OrbitAI Admin Dashboard",
-    description:
-      "An internal tool for Agidigbo FM to manage show schedules and announcements efficiently.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/c_pad,w_500,h_500,e_improve,e_sharpen/v1759950834/orbitAi-Admin_q8ks0x.png",
-    live: "https://orbyt-ai.vercel.app/admin",
-    tech: ["Next.js", "TailwindCSS", "Node.js"],
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "My personal portfolio showcasing projects, skills, and experiences in software development.",
-    image: "https://res.cloudinary.com/dehxkiyzb/image/upload/v1759952180/portfolio_bruzix.png",
-    live: "https://yourportfolio.vercel.app",
-    tech: ["Next.js", "TailwindCSS", "Framer Motion"],
   },
 ];
 
