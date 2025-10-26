@@ -132,11 +132,19 @@ function InputGroupInput({
   className,
   ...props
 }: React.ComponentProps<"input">) {
+    const [hasText, setHasText] = React.useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHasText(e.target.value.trim().length > 0);
+    props.onChange?.(e); // preserve external onChange if provided
+  };
   return (
     <Input
       data-slot="input-group-control"
+      onChange={handleChange}
       className={cn(
         "flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-0 dark:bg-transparent",
+        hasText ? "text-white" : "text-muted-foreground",
         className
       )}
       {...props}
